@@ -20,7 +20,7 @@ const port = process.env.PORT || 3000
 // Middleware
 app.use(bodyparser.json())
 app.use(cors({
-    origin: ['https://your-vercel-app.vercel.app'], // Replace with your actual Vercel frontend URL
+    origin: ['https://frontend-password-manager-lemon.vercel.app'], // Replace with your actual Vercel frontend URL
     credentials: true
 }))
 
@@ -54,4 +54,5 @@ app.delete('/', async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Example app listening on  http://localhost:${port}`)
+
 })
